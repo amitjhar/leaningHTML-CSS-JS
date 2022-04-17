@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Layout concept  -->  
+    <style>
+        #aq{
+            /* defult layout  */
+            display:flex;
+            
+/* row , colum, row reverse , colum reverse  */
+       flex-direction: column;
+
+       /* use for resposnsive  */
+       flex-wrap: wrap;
+
+       /* use for spacing  */
+       justify-content: space-between;
+
+       /* use for horizontal alignment ( left  , center , right ) */
+       justify-content: center;
+
+       /* use for vertically alignment (flex start, center,flex end ) */
+        height: 80px;
+        align-items: flex-end;
+        }
+        #it1{
+            background-color: blue;
+        }
+        #it2{
+            background-color: brown;
+        }
+        #it3{
+            background-color: chartreuse;
+        }
+        #it4{
+            background-color: crimson;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="aq">
+    <div id="it1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ipsam? </div>
+    <div id="it2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi unde magnam possimus beatae doloribus consequuntur corporis fuga autem quidem vel. </div>
+    <div id="it3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quod sapiente ratione. Accusamus, voluptate explicabo?</div>
+    <div id="it4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, recusandae!</div>
+</div>
+</body>
+</html>
