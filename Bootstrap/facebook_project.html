@@ -7,68 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    
+
+    <style>
+        body {
+            background-color: rgb(226, 233, 255);
+        }
+
+        .style {
+            position: relative;
+            top: 200px;
+            left: 200px;
+        }
+
+        .facebook {
+            font-size: 50px;
+            color: #1877f2;
+            font-weight: bolder;
+            text-transform: lowercase;
+        }
+
+        .subtitle {
+            font-size: 30px;
+            color: rgb(65, 65, 65);
+        }
+
+        .facebook-container {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0px 60px;
+        }
+
+        .c1 {
+            width: 400px;
+        }
+
+        .c2 {
+            width: 400px;
+            background-color: white;
+            padding: 10px;
+            padding-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
+        }
+
+        .create-btn {
+            width: 60%;
+        }
+
+        @media only screen and (max-width: 900px) {
+            flex-direction: column;
+            .facebook-container {
+            }
+        }
+    </style>
 
 </head>
 
 <body>
-
-    <section class="bg-light">
-    <form action="">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <label for="" class="form-label"></label> 
-                <input type="text" name="" id="" class="form-control " placeholder="Phone or email">
-            
-            </div>
+    <div class="facebook-container">
+        <div class="c1">
+            <p class="facebook">Facebook</p>
+            <p class="subtitle">
+                Facebook helps you connect and share with the people in your life.
+            </p>
         </div>
+        <section class="c2">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="form-label"></label>
+                            <input type="text" name="" id="" class="form-control " placeholder="Phone or email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label for="" class="form-label"></label>
+                            <input type="text" name="" id="" class="form-control " placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit"
+                                class="bg-primary fs-4 fw-bold text-center mt-3 form-control text-light">Log in
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row my-4">
+                    <div class="col text-center">
+                        <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0 "
+                            class="mt-5 ms-5">forgotton Password ??</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="display: flex;
+                        justify-content: center;">
+                        <button type="submit"
+                            class="bg-success text-center text-light fs-5 fw-bold form-control create-btn">
+                            <a href="https://hi-in.facebook.com/" class="text-light text-decoration-none"> Creat New
+                                Account</a></button>
+                    </div>
+                </div>
+            </form>
+        </section>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <label for="" class="form-label"></label> 
-                <input type="text" name="" id="" class="form-control " placeholder="Password">
-            
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <button type="submit" class="bg-primary fs-4 fw-bold text-center mt-3 form-control text-light">Log in </button> 
-            
-            
-            </div>
-        </div>
-    </div>
-
-    <div class="container mt-3 me-5 ms-5">
-        <div class="row">
-            <div class="col-md-12">
-                <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0 " class="mt-5 ms-5">forgotton Password ??</a>
-            </div>
-        </div>
-    </div>
-
-    
-
-
-    <hr>
-
- <div class="container">
-     <div class="row">
-         <div class="col-md-4">
-             <button type="submit" class="bg-success text-center text-light fs-5 fw-bold form-control" > <a href="https://hi-in.facebook.com/" class="text-light text-decoration-none"> Creat New Account</a></button>
-             
-         </div>
-     </div>
- </div>
-    
-</form>
-</section>
 </body>
 
 </html>
