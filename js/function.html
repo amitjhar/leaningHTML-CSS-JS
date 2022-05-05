@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //     // expression function
+        function disp(){
+            console.log('welcome'); //code(function block)
+        }
+            disp(); //function calling
+
+        //     // deacalration function 
+
+           let a = function  (){
+            console.log('welcome'); 
+        }
+        a();
+
+        let add = function(a,b,x){
+            let c=a+b;
+            console.log(c)
+            console.log('my name is '+x)
+        }
+        add (4,5,'amit');
+
+        // global varaible
+        let b = 'amit';
+        let x = function () {
+            console.log(b);
+        }
+        x();
+
+        // local varaible 
+        let y = function () {
+            let a = 'jangid';
+            console.log(a);
+        }
+        y();
+
+        // arrow function 
+        let d = (a,b)=>{
+            console.log('hi amit jangid')
+        }
+        d();
+    </script>
+</body>
+
+</html>

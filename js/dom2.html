@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>welcome to my page </h1>
+    <p id="p1"></p>
+    <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, ducimus!</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, reiciendis odio neque mollitia
+        corrupti, fugiat sed facere porro omnis distinctio error corporis aliquam optio molestias sunt debitis cumque
+        voluptates quae!</p>
+    <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quia!</p>
+    <p id="p4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, veniam!</p>
+    <div>
+        <img src="/media/a1.jpg" alt="" id="img">
+        <a href="" id="link">data type link </a>
+    </div>
+<
+    <button onclick="changeimg();">click here to change photo</button>
+    <script>
+
+
+        // for using id 
+        let a = document.getElementById('p1')
+        console.log(a)
+
+        // for using class 
+
+        let b = document.getElementsByClassName('p2')[0];
+        console.log(b)
+
+        // for using tag name 
+
+        let c = document.getElementsByTagName('h1')
+        console.log(c)
+
+        // inner text 
+
+        let d = document.getElementById('p3').innerText = 'welcome to DOM page'
+        console.log(d)
+
+        // inner html 
+
+        let e = document.getElementById('p4').innerHTML = '<h1> Hallo world </h1>'
+        console.log(e)
+
+        // Attributes
+
+        let f = document.getElementById('img').attributes[0].value = '/media/bed.jpg';
+        console.log(f)
+
+        // img change eg. using function 
+        function changeimg() {
+            let g = document.getElementById('img').attributes[0].value = '/media/amit.jpeg';
+            console.log(g)
+        }
+
+// how to change link using by dom 
+
+
+
+    document.getElementById('link').attributes[0].value = 'https://www.google.com/';
+    document.getElementById('link').innerText= 'google.com'
+    console.log(i)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

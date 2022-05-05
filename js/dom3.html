@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         #img1{
+             width: 100px;
+             
+         }
+         .img2{
+             width: 300px;
+             border-radius: 50%;
+         }
+    </style>
+</head>
+<body>
+    
+        <img src="/media/amit.jpeg" alt="" id="img1" class="img2">
+    
+        <div id="div1">
+            amit 
+        </div>
+    
+    <script>
+         
+        //  img change method by dom 
+let a = document.getElementById('img1').attributes[2].value= 'img2';
+console.log(a)
+
+// background change method by dom 
+
+let b = document.getElementById('div1').style.backgroundColor = 'green';
+console.log(b)
+
+// border by using dom 
+let c = document.getElementById('div1').style.border= '3px solid red';
+console.log(c)
+
+    </script>
+</body>
+</html>

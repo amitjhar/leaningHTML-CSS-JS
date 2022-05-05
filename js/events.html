@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+       <!-- use mouse  -->
+    <button onclick="a()">click here to more</button>
+    <script>
+        let a = (a,b)=>{
+            console.log('aamit')
+        }
+        a();
+
+        // use keyboard 
+
+        let b = (c,d)=>{
+            console.log('i am jhar')
+        }
+        b();
+
+        //    back to back function  1st method
+
+        function add (){
+            console.log('i am the 1st function')
+        }
+
+        let c = function (fx){
+            fx();
+            console.log('i am the second function')
+        }
+        c(add);
+
+        // back to back function 2nd method
+
+        function c(){
+            
+        }
+
+        let d= ()=>{
+            console.log('I am the second')
+        }
+               d(()=>{console.log('i am the first');});
+
+
+            //    set interval function 
+
+
+            let e = ()=>{
+                console.log('hallo world')
+            }
+            setInterval(e,3000);
+            setTimeout(e,3000);
+
+
+            // set time out eg. 
+            
+            let f = ()=>{
+                console.log('hallo world')
+            }
+            let g= ()=>{
+                console.log('hallo world')
+            }
+            let c= ()=>{
+                console.log('hallo world')
+            }
+a();
+setTimeout(b,3000);
+setTimeout(c,6000);
+
+    </script>
+</body>
+</html>
