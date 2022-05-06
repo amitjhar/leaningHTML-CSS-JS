@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
     <div id="error"></div>
-<form action="dom2.html" onsubmit=" return validation();">
+    <form action="dom2.html" onsubmit="  return validation();">
 
-    <input type="text" name="" id="username">
-    <br><br>
-    <input type="text" name="" id="">
-    
-    <br>
-    <input type="text" name="" id="">
-    <button type="submit">sumbit</button>
-</form>
-        <script>
-function validation(){
+        <input type="text" name="" id="username">
+        <br><br>
+        <input type="text" name="" id="">
+
+        <br>
+        <input type="text" name="" id="">
+        <button type="submit">sumbit</button>
+    </form>
+    <script>
+     function validation(){
     let a = document.getElementById('username').value 
    // alert(a);
 
@@ -40,9 +42,10 @@ else if (a.length<5){
     document.getElementById('username').style.border="2px solid red"
     return false;
 }
-}
+        }
 
-        </script>
-    
+    </script>
+
 </body>
+
 </html>
