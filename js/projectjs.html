@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    #div1 {
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      margin-top: 50px;
+      background-color: green;
+
+
+    }
+
+    #div2 {
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      margin-top: 50px;
+      background-color: green;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div id="div1"></div>
+  <br><br><br>
+  <button onclick="add();">click to change color</button>
+  <div id="div2"></div>
+
+  <script>
+    var a = document.getElementById('div1')
+    var b = document.getElementById('div2')
+
+    var colors = ['blue', 'yellow', 'red']
+    var current = 0;
+
+    function add() {
+
+      b.style.backgroundColor = a.style.backgroundColor
+      a.style.backgroundColor = colors[current%colors.length]
+    
+      current++
+      console.log(a)
+    }
+
+//   var a =[112,22,44,44,55,55,66,77,3]
+//   var b = ["red","amit","andfdf","adfdf",4545,645,{name:"jgdgd"}]
+
+
+// console.log(b[Math.floor(b.length/2)])
+
+
+
+
+  </script>
+</body>
+
+</html>

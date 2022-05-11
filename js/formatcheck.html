@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="error"></div>
+    <form action="dom2.html" onsubmit="  return validation();">
+
+        <input type="text" name="" id="username">
+        <br><br>
+     
+        <button type="submit">sumbit</button>
+    </form>
+    <script>
+
+        // abc........ pattern 
+
+//    reg = /abc/i;
+
+//    function  validation(){
+
+//     let a = document.getElementById('username').value;
+//     if(reg.test(a)){
+//         alert('matched')
+//         return false;
+//     }else{
+//         alert('not matched')
+//         return false;
+//     }
+    
+//    }
+
+                     //  abc.....+ numeric pattern 
+
+//    reg = /[a-e][0-6]/i;
+
+// function  validation(){
+
+//  let a = document.getElementById('username').value;
+//  if(reg.test(a)){
+//      alert('matched')
+//      return false;
+//  }else{
+//      alert('not matched')
+//      return false;
+//  }
+ 
+// }
+
+                       //  fix position  using by (^ + $) 
+
+// reg = /^[a-g][1-9]$/i;
+
+// function  validation(){
+
+//  let a = document.getElementById('username').value;
+//  if(reg.test(a)){
+//      alert('matched')
+//      return false;
+//  }else{
+//      alert('not matched')
+//      return false;
+//  }
+ 
+// }
+
+           // 10 times dekhana ho to 
+
+//          reg = /^[0-9]{10}$/i;
+
+// function  validation(){
+
+//  let a = document.getElementById('username').value;
+//  if(reg.test(a)){
+//      alert('matched')
+//      return false;
+//  }else{
+//      alert('not matched')
+//      return false;
+//  }
+ 
+// }
+
+        // Real use of format check  -> mobile number check
+
+        reg = /^[0-9]{10}$/i;
+        function validation(){
+           let a= document.getElementById('username').value;
+            if(!reg.test(a)){
+
+
+                document.getElementById('error').innerText='enter the correct mobile number';
+                return false;
+            }
+            
+        }
+
+        
+
+    </script>
+
+</body>
+
+</html>
