@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <style>
-.img{
-
-    width: 200px;
-    height: 200px;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
+  <form action="/boxmodal.html" onsubmit="validation();">
 
-  <!-- <script>
-
-    var index = 30;
-    if(index % 2 == 1){
-        console.log("odd number")
-    }else{
-        console.log("even number")
-    }
-
-    var index = 1;
-    while(index<15){
-       if(index % 2 ==1){
-           console.log('odd ')
-           
-       }
-       else{
-           console.log('even')
-       }
-       index=index+1
-        
-    }
-      
+    <input type="text" name="" id="username" >
+    <br>
+    <br>
+    <input type="text" name="" id="input" >
+    <br>
+    <input type="text" name="" id="" >
     
-  </script> -->
-
-<div id="link"></div>
-  <script>
-
-let a = document.createElement('a')
-a.href="http://google.co.in"
-document.body.append(a)
-document.createTextNode('google')
-
-console.log(a)
-
-  </script>
+    <button type="submit" id="sub">submit</button>
+   </form>
 
 
-    </script>
+   <script>
+
+function validation(){
+  let a = document.getElementById('username').value 
+// alert(a);
+
+
+
+  else if(a.trim() == ''){
+
+    document.getElementById('usernaem').innerText="click here to go ahead"
+    document.getElementById('')
+  }
+
+  
+  }
+
+
+
+
+   </script>
+
+    
+    
 </body>
-</html> 
+</html>
